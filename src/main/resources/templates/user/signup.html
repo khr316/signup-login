@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP</title>
+    <link rel="stylesheet" href="/css/sign.css">
+</head>
+
+<body>
+    <div class="container right-panel-active">
+        <!-- Sign Up -->
+        <div class="container__form container--signup">
+            <form action="/signup" method="post" class="form" id="form1">
+                <h2 class="form__title">Sign Up</h2>
+                <input type="text" id="username" name="username" placeholder="User Name" class="input" required />
+                <input type="email" id="email" name="email" placeholder="Email" class="input" required />
+                <button type="button" id="check-email" class="btn">중복체크(필수)</button>
+                <input type="password" id="password" name="password" placeholder="Password" class="input" required />
+                <input type="password" id="password-check" placeholder="Password Check" class="input" required />
+                <button type="submit" id="sign-up" class="btn" disabled>Sign Up</button>
+            </form>
+        </div>
+
+        <!-- Overlay -->
+        <div class="container__overlay">
+            <div class="overlay">
+                <div class="overlay__panel overlay--left">
+                    <p class="password-requirements">
+                        Password: <br>
+                        특수문자 & 알파벳 1개 이상, 12자 이상
+                    </p>
+                    <a href="/login"><button class="btn" id="signIn">Sign In</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/javascript/signup.js"></script>
+</body>
+
+</html>

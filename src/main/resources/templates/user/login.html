@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG IN</title>
+    <link rel="stylesheet" href="/css/sign.css">
+</head>
+
+<body>
+    <div class="container right-panel-active">
+        <!-- Sign In -->
+        <div class="container__form container--signin">
+            <form action="/login" method="post" class="form" id="form2">
+                <h2 class="form__title">Sign In</h2>
+                <p th:text="${error}" style="color: red;"></p>
+                <input type="email" name="email" placeholder="Email" class="input" required/>
+                <input type="password" name="password" placeholder="Password" class="input" required/>
+                <a href="/password" class="link">Forgot your password?</a>
+                <button class="btn">Sign In</button>
+            </form>
+        </div>
+
+        <!-- Overlay -->
+        <div class="container__overlay">
+            <div class="overlay">
+                <div class="overlay__panel overlay--left">
+                    <a href="/signup"><button class="btn" id="signUp">Sign Up</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
